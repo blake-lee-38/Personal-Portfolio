@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+div{
+    height: fit-content;
+}
+
 p {
     color: rgb(85, 85, 85);
 }
@@ -38,6 +42,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: black;
+}
+
+nav a, .logo{
+    color: white;
 }
 
 .nav-links {
@@ -71,11 +80,13 @@ a:hover{
 
 #hamburger-nav{
     display: none;
+    background-color: black;
 }
 
 .hamburger-menu{
     position: relative;
     display: inline-block;
+    color: white;
 }
 
 .hamburger-icon{
@@ -85,12 +96,13 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    color: white;
 }
 
 .hamburger-icon span{
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
@@ -147,17 +159,21 @@ a:hover{
 
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    margin: 0 10rem 10rem 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
+    height: fit-content;
 }
 
 .section-container{
     display: flex;
 }
 
+#about .section-container{
+    justify-content: center;
+}
+
 /* PROFILE */
+
 
 #profile{
     display: flex;
@@ -168,7 +184,7 @@ section {
 }
 
 .section_pic-container{
-    display:inline-block;
+    display:flex;
     height: 400px;
     width: 400px;
     overflow: hidden;
@@ -264,6 +280,9 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .section__text__p1{
@@ -272,12 +291,14 @@ section {
 
 .about-details-container{
     justify-content: center;
+    width: 75%;
     flex-direction: column;
 }
 
 .about-containers, .about-details-container{
     display: flex;
 }
+
 
 .section_pic-container .about-pic{
     height: 100%;
@@ -308,8 +329,8 @@ section {
 }
 
 .section_pic-container{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: auto 0;
 }
 
@@ -318,6 +339,15 @@ section {
 
 #experience{
     position: relative;
+    min-height: fit-content;
+    height: fit-content;
+}
+
+.image{
+    border-radius: 2rem;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 
 .experience-sub-title{
@@ -325,6 +355,13 @@ section {
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+}
+
+.experience-sub-title2{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .experience-details-container{
@@ -335,8 +372,8 @@ section {
 
 .article-container{
     display: flex;
-    text-align: initial;
-    flex-wrap:wrap;
+    text-align: center;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 2rem;
     justify-content: space-around;
@@ -357,6 +394,7 @@ article .icon{
 
 #projects{
     position: relative;
+    height: fit-content;
 }
 
 .color-container{
@@ -421,7 +459,8 @@ article .icon{
 
 footer{
     height: 26vh;
-    margin: 0 1rem;
+    margin: 0;
+    background-color: black;
 }
 
 footer p{
